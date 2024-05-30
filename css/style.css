@@ -1,0 +1,51 @@
+/* Global Styles */
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../webfonts/Pacifico-Regular.woff2') format('woff2'),
+        url('../webfonts/Pacifico-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Salsa';
+    src: url('../webfonts/Salsa-Regular.woff2') format('woff2'),
+        url('../webfonts/Salsa-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --h1-font: 'Pacifico';
+    --h3-font: 'Salsa';
+    --body-bg: #EEEEEE;
+    --border-color: #555;
+    --box-shadow-color: #cecece;
+}
+
+body {
+    background-color: var(--body-bg)
+}
+/* ///////////////////////////////////////////////// */
+h1 {
+    font-family: var(--h1-font);
+    font-size: 3.125rem;
+}
+
+h3 {
+    font-family: var(--h3-font);
+    font-size: 1.3125rem;
+
+}
+
+.s-btn {
+    --bs-btn-padding-x: 2.5rem;
+}
+
+.form-control:focus {
+    border-color: var(--border-color);
+    box-shadow: 0 0 0 .25rem var(--box-shadow-color);
+}

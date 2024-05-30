@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ========== Website title ========== -->
+    <title>Bookmark Website</title>
+    <!-- ========== Website Icon ========== -->
+    <link rel="icon" href="images/bookmark (6).png">
+    <!-- ========== Bootstrap link ========== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- ========== Fontawesome link ========== -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- ========== CSS external link ========== -->
+    <link rel="stylesheet" href="css/style.min.css">
+
+
+
+
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"></div>
+                <div class="w-75 mx-auto bg-white my-4 p-3">
+                    <h1 class="text-center my-4">Bookmarker</h1>
+                    <hr class="mb-4">
+                    <h3 class="text-center"><span><i class="fa-solid fa-bookmark fa-flip"></i></span> Bookmark Your Favorite
+                        Sites
+                        <span><i class="fa-solid fa-bookmark fa-flip"></i></span>
+                    </h3>
+                    <div class="mt-5">
+                        <div class="form-floating mb-3">
+                            <input type="text" oninput="validationInputs(this)" class="form-control" id="bookmarkName"
+                                placeholder="name@example.com">
+                            <label for="bookmarkName">Bookmark Name</label>
+                        </div>
+                        <div class="form-floating mt-5">
+                            <input type="url" oninput="validationInputs(this)" class="form-control" id="websiteUrl"
+                                placeholder="name@example.com">
+                            <label for="websiteUrl">Website Url</label>
+                        </div>
+                        <div class="button d-flex justify-content-center align-items-center">
+                            <button class="btn btn-outline-dark mt-4 s-btn" id="addBtn" onclick="addItem()">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-75 mx-auto">
+                    <hr class="mb-4">
+                    <table class="table text-center table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Index</th>
+                                <th>WebsiteName</th>
+                                <th>Visit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableData">
+                        </tbody>
+                    </table>
+    
+    
+                </div>
+            </div>
+    
+        </div>
+    </main>
+   
+
+
+
+
+    <!-- ========== Bootstrap JS link ========== -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ========== JS link ========== -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
